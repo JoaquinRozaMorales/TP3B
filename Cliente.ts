@@ -19,24 +19,10 @@ export class Cliente {
         let total = 0;
 
         this.facturas.forEach(factura=>{
-            if(factura.tipoPago="E"){
+            if(factura.tipoPago==tipoPago){
                 total += factura.totalFinal;
-            }
-            if(factura.tipoPago="TD"){
-                total += factura.totalFinal;
-            }
-            if(factura.tipoPago="TC"){
-                total += factura.totalFinal;
-            }
-            if(factura.tipoPago="CC"){
-                total += factura.totalFinal;
-            }
-            if(factura.tipoPago="TR"){
-                total += factura.totalFinal;
-            }
-            else{ total = null;}
-        });
-
+     
+        }});
 
         return total;
     }

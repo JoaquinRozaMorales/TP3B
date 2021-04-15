@@ -12,7 +12,7 @@ export class Factura {
     
 
     constructor(letra: string, numero: number, recargo: number,
-        tipoPago: String, totalFinal: number, fecha: Date) {
+        tipoPago: String, fecha: Date) {
 
         this.letra = letra;
         this.numero = numero;
@@ -22,12 +22,12 @@ export class Factura {
         else{
             console.log("el tipo de pago no es correcto");
         }
-        
-        this.totalFinal = totalFinal;
-        this.fecha = fecha;
+        this.fecha = fecha;       
     }
 
     calcularTotalItems (): number{
+        
+        this.totalItems=0;
 
         this.detallesfacturas.forEach(detalles => {
             this.totalItems += detalles.calcularSubTotal();
@@ -38,8 +38,11 @@ export class Factura {
     }
 
     calcularTotalFinal (): number{
+        
+        this.totalFinal=0;
 
         this.totalFinal = this.totalItems + this.recargo; 
+
         return this.totalFinal;
     }
 

@@ -9,6 +9,7 @@ export class DetalleFactura {
 
         this.cantidad = cantidad;
         this.articulo = articulo;
+        this.subtotal = this.calcularSubTotal();
     }   
 
     public calcularSubTotal(): number{ 

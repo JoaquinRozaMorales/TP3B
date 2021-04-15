@@ -12,12 +12,11 @@ var Cliente = /** @class */ (function () {
         this.cuit = cuit;
     }
     Cliente.prototype.totalFacturadoXTipoPago = function (tipoPago) {
-        var total = null;
-        
+        var total = 0;
         this.facturas.forEach(function (factura) {
             if (factura.tipoPago == tipoPago) {
                 total += factura.totalFinal;
-         }
+            }
         });
         return total;
     };
