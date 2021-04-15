@@ -90,10 +90,10 @@ class TestB {
         \n-------3- Subtotal del detalle de factura 6 es: ${this.detalleFactura6.calcularSubTotal()} 
         \n-------3- Subtotal del detalle de factura 7 es: ${this.detalleFactura7.calcularSubTotal()} 
         \n-------4- forma de pago Efectivo del cliente: ${this.cliente.razonSocial} igual a: ${this.cliente.totalFacturadoXTipoPago("E")}
-        \n-------5- forma de pago Tarjeta de Credito  del cliente: ${this.cliente.razonSocial} igual a: ${this.cliente.totalFacturadoXTipoPago("TC")}
-        \n-------6- forma de pago Tarjeta de Debito del cliente: ${this.cliente.razonSocial} igual a: ${this.cliente.totalFacturadoXTipoPago("TD")}
-        \n-------6- forma de pago Cuenta Corriente del cliente: ${this.cliente.razonSocial} igual a: ${this.cliente.totalFacturadoXTipoPago("CC")}
-        \n-------6- forma de pago Transferencia del cliente: ${this.cliente.razonSocial} igual a: ${this.cliente.totalFacturadoXTipoPago("TR")}`);
+        \n-------4- forma de pago Tarjeta de Credito  del cliente: ${this.cliente.razonSocial} igual a: ${this.cliente.totalFacturadoXTipoPago("TC")}
+        \n-------4- forma de pago Tarjeta de Debito del cliente: ${this.cliente.razonSocial} igual a: ${this.cliente.totalFacturadoXTipoPago("TD")}
+        \n-------4- forma de pago Cuenta Corriente del cliente: ${this.cliente.razonSocial} igual a: ${this.cliente.totalFacturadoXTipoPago("CC")}
+        \n-------4- forma de pago Transferencia del cliente: ${this.cliente.razonSocial} igual a: ${this.cliente.totalFacturadoXTipoPago("TR")}`);
         console.log(mostrar);
         return mostrar;
   
